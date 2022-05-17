@@ -1,0 +1,468 @@
+/* Variables css*/
+:root{
+    /* Colors */
+    /* Color mode HSL(hue, saturation, lightness)*/
+    /*
+        blue    :   hsl(224, 69%, 14%)
+        red     :   hsl(0, 100%, 43%)
+        gray    :   hsl(0, 0%, 98%)
+        green   :   hsl(100, 83%, 41%)
+        yellow  :   HSL(52, 100%, 50%)
+    */
+
+    --hue: 41;
+    --sat: 96%;
+    --lig: 80%;
+
+    --brand-color1: hsl(var(--hue), var(--sat), var(--lig)) ;
+    --brand-color2: hsl(30, 64%, 44%);
+    --title-color: hsl(40, 15%, 19%);
+    --text-color: hsl(40, 15%, 19%);
+    --bg-gradient: linear-gradient(105.88deg, #B86F28 0%, #FDDE9B 100%);
+    --container-color: #fff;
+    --attention-yellow: hsl(48, 98%, 47%);
+    --attention-red: hsl(358, 85%, 52%);
+    --attention-green: hsl(133, 87%, 39%);
+
+    /* Font and typography */
+    /* .5rem = 8px / 1rem = 16px */
+    --body-font: 'Inter', sans-serif;
+    --header: 5.8rem;
+    --title: 3.8rem;
+    --subtitle: 2.9rem;
+    --subtitle-h4: 2.2rem;
+    --body-text: 1.9rem;
+    --details: 1.6rem;
+    --smallest: 1.2rem;
+
+    /* Title center*/
+
+}
+
+/* Responsive typography */
+@media only screen and (orientation: portrait)  {
+    :root {
+        --header: 4.8rem;
+        --title: 3.2rem;
+        --subtitle: 1.9rem;
+        --body-text: 1.6rem;
+        --details: 1.2rem;
+        --smallest: 1.0rem;
+    }
+}
+*,
+*::after,
+*::before{
+    list-style:none;
+    text-decoration:none;
+    margin:0;
+    padding:0;
+    text-align:left;
+    border:0;
+    outline-color:#ccc;
+    color: var(--text-color);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    font-family: var(--body-font);
+    font-display: swap;
+    font-size: 62.5%;
+}
+html{
+    scroll-behavior: smooth;
+    direction: ltr;
+}
+body{
+    counter-reset: num;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+h2{
+    font-size: var(--title);
+}
+h3{
+    font-size: var(--subtitle);
+}
+h4{
+    font-size: var(--subtitle-h4);
+}
+p{ 
+    font-size: var(--body-text);
+}
+b{
+    font: inherit;
+}
+li{
+    font-size: var(--body-text);
+}
+summary{
+    font-size: var(--body-text);
+    font-weight: 600;
+}
+button {
+    width: 25.6rem;
+    height: 6.4rem;
+    padding: 0 2rem;
+    color: #FFFFFF;
+    border-radius: 0.8rem;
+    font-size: var(--body-text);
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--attention-green);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color .4s ease;
+    transition: box-shadow .4s ease;
+    box-shadow: 0px 1.25rem 40px -11px var(--attention-green);
+}
+button:hover {
+    background-color: bluee;
+    box-shadow: 0px 1.25rem 40px -11px var(--attention-green);
+    color: #ffffff;
+}
+section{
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+.container{
+    display: grid;
+    width: min(100% - 10%, 1216px);
+    margin-inline: auto;
+    gap: 2rem;
+
+}
+
+header{
+    display: grid;
+    justify-content: center;
+    padding-top: 2.4rem;
+    background: linear-gradient(180deg, #FDDE9B 0%, #F9C567 100%);
+}
+header .container{
+    width: 100%;
+}
+header .container img{
+    max-width: max-content;
+    max-height: 100vh;
+    object-fit: contain; 
+}
+
+.s_bulet_benefits .container .content_bulet_benefits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 3.2rem;
+}
+.s_bulet_benefits .container .content_bulet_benefits .content_item{
+    padding: 2.4rem;
+    border-radius: 1.2rem;
+    background-color: #FDDE9B;
+}
+.s_bulet_benefits .container .content_bulet_benefits .content_item h4{
+    font-size: var(--body-text);
+}
+
+.s-problems .container h2{
+    text-align: center;
+}
+.s-problems .container h3{
+    text-align: center;
+    font-weight: 600;
+}
+.s-problems .container strong{
+    font-weight: 900;
+    font-size: inherit;
+}
+.s-problems .container .content_problems {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 3.2rem;
+
+    justify-content: center;
+}
+.s-problems .container .content_problems .item_problems{
+    padding: 2.4rem;
+}
+.s-problems .container .content_problems .item_problems img{
+    max-width: max-content;
+    height: 182.16px;
+    object-fit: contain;
+    margin-top: .8rem;
+    margin-bottom: 1.6rem;
+}
+.s-problems .container .content_problems .item_problems h3{
+    text-align: center;
+}
+.s-problems .container .content_problems .item_problems p{
+    text-align: center;
+}
+
+.s-benefits .container h2{
+    text-align: center;
+}
+.s-benefits .container .content_benefits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 1.6rem;
+}
+.s-benefits .container .content_benefits .info_benefits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2.4rem;
+}
+.s-benefits .container .content_benefits .info_benefits p{
+    text-align: center;
+}
+.s-benefits .container .content_benefits .info_benefits .item_benefits{
+    display: grid;
+    gap: .8rem;
+    padding: 1.6rem;
+    justify-items: center;
+}
+.s-benefits .container .content_benefits .image_benefits{
+    display: grid;
+    justify-content: end;
+    align-items: flex-end;
+}
+.s-benefits .container .content_benefits .image_benefits img{
+    max-width: max-content;
+    height: 512px;
+    object-fit: contain;
+}
+
+.s-for-woman_for-man {
+    background: linear-gradient(254.37deg, #000000 0.77%, #383329 99.69%);
+}
+.s-for-woman_for-man .container h2 {
+    color: #fff;
+    text-align: center;
+}
+.s-for-woman_for-man .container h3 {
+    color: #fff;
+}
+.s-for-woman_for-man .container li {
+    color: #fff;
+    line-height: 180%;
+}
+.s-for-woman_for-man .container a{
+    margin-top: 1.6rem;
+    place-self: center;
+}
+.s-for-woman_for-man .container .content_for-woman_for-man {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 2.4rem;
+    align-items: center;
+    justify-content: center;
+}
+.s-for-woman_for-man .container .content_for-woman_for-man .for_image img{
+    height: 464.35px;
+    max-width: max-content;
+    object-fit: contain;
+}
+
+.s-recomend .container h2{ 
+    text-align: center;
+}
+.s-recomend .container h3{ 
+    text-align: center;
+}
+.s-recomend .container p{ 
+    text-align: center;
+}
+
+.s-recomend .container .content_recomend{ 
+        align-content: center;
+        background: transparent;
+        padding: 0; 
+        display: grid;
+        overflow: hidden;
+}
+.s-recomend .container .content_recomend figure {
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    border-radius: .8rem;
+  }
+  
+  .s-recomend .container .content_recomend img {
+    scroll-snap-align: start; 
+    border-radius: .6rem;
+    margin-bottom: 15px;
+    width: max-content;
+    object-fit: contain;
+    height: 512px;
+    margin-right: .8rem;
+  }
+  
+  /* layout */
+  
+  .s-recomend .container .content_recomend figure {
+    align-content: center;
+    border:none;
+    background-color: transparent;
+    display: grid;
+    grid: auto / repeat(7, auto);
+    grid-gap: 1em;
+  }
+
+.s-batle .container h2{
+    text-align: center;
+}
+.s-batle .container .content_batle{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 2.4rem;
+}
+.s-batle .container .content_batle .maca_nemasway{
+    display: grid;
+    gap: 1.6rem;
+}
+.s-batle .container .content_batle .maca_nemasway img{
+    display: block;
+    width: 292px;
+    height:256px;
+    object-fit: contain;
+}
+.s-batle .container .content_batle .batle_vs {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.s-batle .container .content_batle .batle_vs img{
+    display: block;
+    width: 120px;
+    height:192px;
+    object-fit: contain;
+}
+.s-batle .container .content_batle .maca_outhers {
+    display: grid;
+    gap: 1.6rem;
+}
+.s-batle .container .content_batle .maca_outhers img{
+    display: block;
+    width: 292px;
+    height:256px;
+    object-fit: contain;
+}
+
+.s-offer .container h2{
+    text-align: center;
+}
+.s-offer .container h3{
+    text-align: center;
+}
+.s-offer .container p{
+    text-align: center;
+}
+.s-offer .container strong{
+    font-size: inherit;
+    display: inline-block;
+    margin-bottom: 2.4rem;
+}
+.s-offer .container .content_offer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 1.6rem;
+    justify-items: center;
+}
+.s-offer .container .content_offer img{
+    display: block;
+    max-width: max-content;
+    height: 329px;
+    object-fit: contain;
+}
+
+.s-faq .container {
+    justify-items: center;
+}
+.s-faq .container h2 {
+    text-align: center;
+}
+.s-faq .container h3 {
+    text-align: center;
+}
+.s-faq .container .content_faq{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 90%;
+}
+
+.s-faq .container .content_faq details summary{
+    padding: 1.6rem 1.6rem;
+    border-radius: .8rem;
+    background-color: rgb(221, 221, 221);
+}
+.s-faq .container .content_faq details p{
+    padding: .8rem 1.6rem;
+    border-radius: .8rem;
+}
+
+footer {
+    background: linear-gradient(254.37deg, #000000 0.77%, #383329 99.69%);
+    padding-top: 6.4rem;
+    padding-bottom: 3.2rem;
+}
+footer p{
+    text-align: center;
+    color: #FFF;
+    font-size: 1.4rem;
+}
+footer nav{
+    display: grid;
+    max-width: 960px;
+    justify-self: center;
+}
+footer ul{
+    display: flex;
+    gap: 2rem;
+}
+footer a{
+    text-align: center;
+    color: #FFF;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+
+  .scroll::-webkit-scrollbar {
+  width: .8rem;
+  height: .8rem;
+  
+  }
+   
+  .scroll::-webkit-scrollbar-track {
+  background:transparent;
+    
+  }
+   
+  .scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+    
+  }
+  /* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+  e 10px de altura para a barra horizontal */
+  ::-webkit-scrollbar {
+  width:.8rem;
+  height: .4rem;
+    border-radius:6rem;
+    
+  }
+   
+  /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+  ::-webkit-scrollbar-track {
+  background:transparent;
+    
+  }
+   
+  /* aqui é a alça da barra, que demonstra a altura que você está na página
+  estou colocando uma cor azul clara nela*/
+  ::-webkit-scrollbar-thumb {
+  background: var(--attention-green);
+    border-radius:6rem;
+    
+  }
