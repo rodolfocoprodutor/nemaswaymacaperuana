@@ -466,3 +466,30 @@ footer a{
     border-radius:6rem;
     
   }
+
+  /* Página de obrigado */
+.s-banner-obrigado{
+    padding-top: 2.4rem;
+    background: linear-gradient(180deg, #FDDE9B 0%, #F9C567 100%);
+}
+.s-banner-obrigado .container{
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.s-banner-obrigado .content_congratulations h2{
+    font-size: clamp(4.5rem, 8vw, 6rem);
+    text-transform: uppercase;
+    color: var(--attention-green);
+}
+.s-banner-obrigado .content_congratulations h3{
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    color: var(--body-text);
+    font-weight: 500;
+}
+.s-banner-obrigado .content_congratulations p{
+    font-size: clamp(1rem, 1.2vw, 1.6rem);
+    color: var(--body-text);
+    font-weight: 400;
+}
