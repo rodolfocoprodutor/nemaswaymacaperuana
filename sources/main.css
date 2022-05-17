@@ -372,7 +372,7 @@ header .container img{
 .s-offer .container .content_offer img{
     display: block;
     max-width: max-content;
-    height: 329px;
+    max-height: 329px;
     object-fit: contain;
 }
 
