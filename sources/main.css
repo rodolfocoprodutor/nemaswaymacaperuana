@@ -154,8 +154,8 @@ header .container img{
 
 .s_bulet_benefits .container .content_bulet_benefits{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 3.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.4rem;
 }
 .s_bulet_benefits .container .content_bulet_benefits .content_item{
     padding: 2.4rem;
@@ -179,7 +179,7 @@ header .container img{
 }
 .s-problems .container .content_problems {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 3.2rem;
 
     justify-content: center;
@@ -206,7 +206,7 @@ header .container img{
 }
 .s-benefits .container .content_benefits{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.6rem;
 }
 .s-benefits .container .content_benefits .info_benefits{
@@ -254,7 +254,7 @@ header .container img{
 }
 .s-for-woman_for-man .container .content_for-woman_for-man {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.4rem;
     align-items: center;
     justify-content: center;
@@ -314,7 +314,7 @@ header .container img{
 }
 .s-batle .container .content_batle{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.4rem;
 }
 .s-batle .container .content_batle .maca_nemasway{
@@ -365,7 +365,7 @@ header .container img{
 }
 .s-offer .container .content_offer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.6rem;
     justify-items: center;
 }
