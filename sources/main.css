@@ -93,7 +93,7 @@ p{
     font-size: var(--body-text);
 }
 b{
-    font: inherit;
+    font-size: inherit;
 }
 li{
     font-size: var(--body-text);
@@ -395,6 +395,7 @@ header .container img{
 .s-faq .container .content_faq details summary{
     padding: 1.6rem 1.6rem;
     border-radius: .8rem;
+    cursor: pointer;
     background-color: rgb(221, 221, 221);
 }
 .s-faq .container .content_faq details p{
