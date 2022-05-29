@@ -141,7 +141,9 @@ header{
     display: grid;
     justify-content: center;
     padding-top: 2.4rem;
-    background: linear-gradient(180deg, #FDDE9B 0%, #F9C567 100%);
+    padding-bottom: 2.4rem;
+    background: linear-gradient(180deg, #FF517E 0%, #B6254B 100%); /* Dia dos namorados*/
+    /*background: linear-gradient(180deg, #FDDE9B 0%, #F9C567 100%);*/
 }
 header .container{
     width: 100%;
