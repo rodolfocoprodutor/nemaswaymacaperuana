@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 /* Variables css*/
 :root{
     /* Colors */
@@ -495,4 +497,45 @@ footer a{
     font-size: clamp(1rem, 1.2vw, 1.6rem);
     color: var(--body-text);
     font-weight: 400;
+}
+
+/* Página de links*/
+.s-links .container{
+    justify-content: center;
+}
+.s-links .container ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.s-links .container ul li a .btn__links{
+    width: 30rem;
+    padding: 1rem 2rem;
+    margin-top: 2.4rem;
+    color: hsl(40, 67%, 14%);
+    border-radius: 1.6rem;
+    font-size: var(--body-text);
+    font-weight: 500;
+    text-align: center;
+    text-transform: none;
+    background-color: hsl(40, 96%, 80%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color .4s ease;
+    transition: box-shadow .4s ease;
+    box-shadow: 0px 1.6rem 3.2rem -1.6rem hsl(40, 67%, 14%);
+}
+
+.s-links .container ul li a .btn__links:hover{
+    color: hsl(41, 96%, 80%);
+    background-color: hsl(40, 67%, 14%);
+    transition: background-color .4s ease;
+    transition: box-shadow .4s ease;
+    box-shadow: 0px 1.6rem 3.2rem -1.6rem hsl(40, 92%, 69%);
+}
+.s-links .container ul li a .pv{
+    color: hsl(41, 96%, 80%);
+    background-color: hsl(40, 67%, 14%);
 }
