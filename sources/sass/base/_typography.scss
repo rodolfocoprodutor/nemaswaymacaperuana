@@ -1,0 +1,36 @@
+h1{
+    font-size: var(--title);
+    color: $gray-headline;
+}
+
+h2{
+    font-size: var(--title);
+    color: $gray-headline;
+}
+h3{
+    font-size: var(--subtitle);
+    color: $gray-headline;
+}
+h4{
+    font-size: var(--subtitle-h4);
+    color: $gray-headline;
+}
+p{ 
+    font-size: var(--body-text);
+    line-height: 160%;
+    color: $gray-paragraph;
+}
+b{
+    font-size: inherit;
+}
+strong{
+    font-size: inherit;
+}
+li{
+    font-size: var(--body-text);
+    line-height: 160%;
+}
+summary{
+    font-size: var(--subtitle-h4);
+    font-weight: 600;
+}

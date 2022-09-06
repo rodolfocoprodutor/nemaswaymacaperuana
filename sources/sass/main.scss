@@ -1,137 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import './base/reset';
+@import './base/root';
+@import './base/colors';
+@import './base/typography';
+@import './components/header';
+@import './components/buttons';
 
-/* Variables css*/
-:root{
-    /* Colors */
-    /* Color mode HSL(hue, saturation, lightness)*/
-    /*
-        blue    :   hsl(224, 69%, 14%)
-        red     :   hsl(0, 100%, 43%)
-        gray    :   hsl(0, 0%, 98%)
-        green   :   hsl(100, 83%, 41%)
-        yellow  :   HSL(52, 100%, 50%)
-    */
-
-    --hue: 41;
-    --sat: 96%;
-    --lig: 80%;
-
-    --brand-color1: hsl(var(--hue), var(--sat), var(--lig)) ;
-    --brand-color2: hsl(30, 64%, 44%);
-    --title-color: hsl(40, 15%, 19%);
-    --text-color: hsl(40, 15%, 19%);
-    --bg-gradient: linear-gradient(105.88deg, #B86F28 0%, #FDDE9B 100%);
-    --container-color: #fff;
-    --attention-yellow: hsl(48, 98%, 47%);
-    --attention-red: hsl(358, 85%, 52%);
-    --attention-green: hsl(133, 87%, 39%);
-
-    /* Font and typography */
-    /* .5rem = 8px / 1rem = 16px */
-    --body-font: 'Inter', sans-serif;
-    --header: 5.8rem;
-    --title: 3.8rem;
-    --subtitle: 2.9rem;
-    --subtitle-h4: 2.2rem;
-    --body-text: 1.9rem;
-    --details: 1.6rem;
-    --smallest: 1.2rem;
-
-    /* Title center*/
-
-}
-
-/* Responsive typography */
-@media only screen and (orientation: portrait)  {
-    :root {
-        --header: 4.8rem;
-        --title: 3.2rem;
-        --subtitle: 1.9rem;
-        --body-text: 1.6rem;
-        --details: 1.2rem;
-        --smallest: 1.0rem;
-    }
-}
-*,
-*::after,
-*::before{
-    list-style:none;
-    text-decoration:none;
-    margin:0;
-    padding:0;
-    text-align:left;
-    border:0;
-    outline-color:#ccc;
-    color: var(--text-color);
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
-    font-family: var(--body-font);
-    font-display: swap;
-    font-size: 62.5%;
-}
-html{
-    scroll-behavior: smooth;
-    direction: ltr;
-}
-body{
-    counter-reset: num;
-}
-img{
-    width: 100%;
-    height: auto;
-}
-h2{
-    font-size: var(--title);
-}
-h3{
-    font-size: var(--subtitle);
-}
-h4{
-    font-size: var(--subtitle-h4);
-}
-p{ 
-    font-size: var(--body-text);
-    line-height: 160%;
-}
-b{
-    font-size: inherit;
-}
-strong{
-    font-size: inherit;
-}
-li{
-    font-size: var(--body-text);
-    line-height: 160%;
-}
-summary{
-    font-size: var(--subtitle-h4);
-    font-weight: 600;
-}
-button {
-    width: 25.6rem;
-    height: 6.4rem;
-    padding: 0 2rem;
-    color: #FFFFFF;
-    border-radius: 0.8rem;
-    font-size: var(--body-text);
-    font-weight: 800;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: var(--attention-green);
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: background-color .4s ease;
-    transition: box-shadow .4s ease;
-    box-shadow: 0px 1.25rem 40px -11px var(--attention-green);
-}
-button:hover {
-    background-color: bluee;
-    box-shadow: 0px 1.25rem 40px -11px var(--attention-green);
-    color: #ffffff;
-}
 section{
     padding-top: 4rem;
     padding-bottom: 6rem;
@@ -142,22 +15,6 @@ section{
     margin-inline: auto;
     gap: 2rem;
 
-}
-
-header{
-    display: grid;
-    justify-content: center;
-    padding-top: 2.4rem;
-    /*background: linear-gradient(180deg, #FF517E 0%, #B6254B 100%); /* Dia dos namorados*/
-    background: linear-gradient(180deg, #FDDE9B 0%, #F9C567 100%);
-}
-header .container{
-    width: 100%;
-}
-header .container img{
-    max-width: max-content;
-    max-height: 100vh;
-    object-fit: contain; 
 }
 
 .s_bulet_benefits .container .content_bulet_benefits{
