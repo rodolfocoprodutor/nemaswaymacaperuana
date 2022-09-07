@@ -1,0 +1,25 @@
+.card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .content_card{
+        flex: 1 1 auto;
+        
+        img{
+            background-color: aqua;
+            max-width: max-content;
+            object-fit: cover;
+            max-height: 26rem;
+        }
+    
+        .card_title{
+            font-size: var(--subtitle-h4);
+        }
+    
+        .card_description{
+            font-size: var(--body-text);
+        }
+    }
+}

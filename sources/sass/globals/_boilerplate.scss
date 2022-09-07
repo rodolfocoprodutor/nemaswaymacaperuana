@@ -1,0 +1,37 @@
+@use '../util' as u;
+
+html{
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+    direction: ltr;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    list-style:none;
+    text-align:left;
+    border:0;
+    outline-color:#ccc;
+    font-display: swap;
+    font-size: 100%;
+}
+
+body{
+    margin:0;
+    padding:0;
+    counter-reset: num;
+    font-family: u.$font;
+    color: #000000;
+    margin-inline: auto;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,25 @@
+.scroll::-webkit-scrollbar {
+    width: .8rem;
+    height: .8rem;
+}
+.scroll::-webkit-scrollbar-track {
+    background:transparent;
+}
+.scroll::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+//personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical e 10px de altura para a barra horizontal
+::-webkit-scrollbar {
+    width:.8rem;
+    height: .4rem;
+    border-radius:6rem;
+}
+//aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro
+::-webkit-scrollbar-track {
+    background:transparent;
+}
+//aqui é a alça da barra, que demonstra a altura que você está na página estou colocando uma cor azul clara nela
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius:6rem;
+}

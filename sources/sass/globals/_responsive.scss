@@ -1,0 +1,11 @@
+/* Responsive typography */
+@media only screen and (orientation: portrait)  {
+    :root {
+        --header: 2.488rem;
+        --title: 2.074rem;
+        --subtitle: 1.728em;
+        --body-text: 1rem;
+        --details: 0.833em;
+        --smallest: 0.694rem;
+    }
+}

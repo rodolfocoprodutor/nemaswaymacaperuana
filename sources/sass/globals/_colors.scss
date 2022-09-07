@@ -25,25 +25,11 @@
 
     /* Font and typography */
     /* .5rem = 8px / 1rem = 16px */
-    --body-font: 'Inter', sans-serif;
-    --header: 5.8rem;
-    --title: 3.8rem;
-    --subtitle: 2.9rem;
-    --subtitle-h4: 2.2rem;
-    --body-text: 1.9rem;
-    --details: 1.6rem;
-    --smallest: 1.2rem;
-
-}
-
-/* Responsive typography */
-@media only screen and (orientation: portrait)  {
-    :root {
-        --header: 4.8rem;
-        --title: 3.2rem;
-        --subtitle: 1.9rem;
-        --body-text: 1.6rem;
-        --details: 1.2rem;
-        --smallest: 1.0rem;
-    }
+    --header: 3.052rem;
+    --title: 2.441rem;
+    --subtitle: 1.953rem;
+    --subtitle-h4: 1.563rem;
+    --body-text: 1rem;
+    --details: 1.8rem;
+    --smallest: 1.64rem;
 }
