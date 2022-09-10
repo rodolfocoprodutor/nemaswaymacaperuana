@@ -1,27 +1,25 @@
 footer {
     background: linear-gradient(254.37deg, #000000 0.77%, #383329 99.69%);
-    padding-top: 6.4rem;
-    padding-bottom: 3.2rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 
     p{
         text-align: center;
         color: #FFF;
-        font-size: 1.4rem;
     }
     nav{
         display: grid;
-        max-width: 960px;
+        max-width: 60rem;
         justify-self: center;
 
         ul{
             display: flex;
-            gap: 2rem;
+            gap: 1.25rem;
         }
         li{
             a{
                 text-align: center;
                 color: #FFF;
-                font-size: 1.4rem;
                 text-decoration: underline;
             }
         }
