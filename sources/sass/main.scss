@@ -30,43 +30,29 @@ section{
     font-size: var(--body-text);
 }
 
-.s-problems .container h2{
-    text-align: center;
-}
-.s-problems .container h3{
-    text-align: center;
-    font-weight: 600;
-}
-.s-problems .container strong{
-    font-weight: 900;
-    font-size: inherit;
-}
-.s-problems .container .content_problems {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.953rem;
+.s-problems {
+    .container {
+        h2 {
+            font-size: var(--title);
+            text-align: center;
+        }
+        h3 {
+            font-size: var(--subtitle);
+            text-align: center;
+        }
+        .content_problems {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.4rem;
+        }
+    }
 
-    justify-content: center;
-}
-.s-problems .container .content_problems .item_problems{
-    padding: 1.25rem;
-}
-.s-problems .container .content_problems .item_problems img{
-    max-width: max-content;
-    height: 182.16px;
-    object-fit: contain;
-    margin-top: .8rem;
-    margin-bottom: 1rem;
-}
-.s-problems .container .content_problems .item_problems h3{
-    text-align: center;
-}
-.s-problems .container .content_problems .item_problems p{
-    text-align: center;
 }
 
 .s-benefits .container h2{
     text-align: center;
+    font-size: var(--title);
 }
 .s-benefits .container .content_benefits{
     display: grid;
@@ -104,9 +90,11 @@ section{
 .s-for-woman_for-man .container h2 {
     color: #fff;
     text-align: center;
+    font-size: var(--title);
 }
 .s-for-woman_for-man .container h3 {
     color: #fff;
+    font-size: var(--subtitle);
 }
 .s-for-woman_for-man .container li {
     color: #fff;
